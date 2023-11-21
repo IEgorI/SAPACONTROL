@@ -1,21 +1,59 @@
 <header class="header">
-    <div class="header__menu">
-        <div class="header__logo">
-            <span>SAPA</span><span class="header__logo-piece">CONTROL</span>
-        </div>
-        <ul class="header__nav">
-            <li class="header__nav-element">Услуги и цены</li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.40376 1.39136L4.54033 5.52793C4.79417 5.78177 5.20573 5.78177 5.45957 5.52793L9.59615 1.39136C9.84999 1.13752 9.84999 0.725959 9.59615 0.472119C9.34231 0.218278 8.93075 0.218278 8.67691 0.472119L4.99995 4.14907L1.323 0.472119C1.06916 0.218278 0.6576 0.218278 0.40376 0.472119C0.149919 0.725959 0.149919 1.13752 0.40376 1.39136Z"
-                    fill="black" />
-            </svg>
-            <li class="header__nav-element"><a href="#">Отчеты</a></li>
-            <li class="header__nav-element"><a href="#">Калькулятор</a></li>
-            <li class="header__nav-element"><a href="#">Ещё</a></li>
-        </ul>
-        <div class="header__about">
+    <nav class="header__menu">
 
+        <a class="header__logo reset-link" href="#">
+            <strong><span>SAPA</span><span class="header__logo-piece">CONTROL</span></strong>
+        </a>
+
+        <ul class="header__nav reset-list">
+            <li class="header__nav-svg">
+                <a class="header__nav-element reset-link" href="#">Услуги и цены</a>
+                <svg class="header__nav-svg-element" xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                    viewBox="0 0 10 6" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.40376 1.39136L4.54033 5.52793C4.79417 5.78177 5.20573 5.78177 5.45957 5.52793L9.59615 1.39136C9.84999 1.13752 9.84999 0.725959 9.59615 0.472119C9.34231 0.218278 8.93075 0.218278 8.67691 0.472119L4.99995 4.14907L1.323 0.472119C1.06916 0.218278 0.6576 0.218278 0.40376 0.472119C0.149919 0.725959 0.149919 1.13752 0.40376 1.39136Z"
+                        fill="black" />
+                </svg>
+            </li>
+            <li><a class="header__nav-element reset-link" href="#">Отчеты</a></li>
+            <li><a class="header__nav-element reset-link" href="#">Калькулятор</a></li>
+            <li class="header__nav-svg">
+                <a class="header__nav-element reset-link" href="#">Ещё</a>
+                <svg class="header__nav-svg-element" xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                    viewBox="0 0 10 6" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.40376 1.39136L4.54033 5.52793C4.79417 5.78177 5.20573 5.78177 5.45957 5.52793L9.59615 1.39136C9.84999 1.13752 9.84999 0.725959 9.59615 0.472119C9.34231 0.218278 8.93075 0.218278 8.67691 0.472119L4.99995 4.14907L1.323 0.472119C1.06916 0.218278 0.6576 0.218278 0.40376 0.472119C0.149919 0.725959 0.149919 1.13752 0.40376 1.39136Z"
+                        fill="black" />
+                </svg>
+            </li>
+        </ul>
+
+        <div class="header__about">
+            <span class="header__about-phone">+9 900 00 00 00 <span class="header__about-phone-piece">(9:00 — 21:00)</span></span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1620_184)">
+                    <mask id="mask0_1620_184" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40"
+                        height="40">
+                        <path
+                            d="M36.1905 0H3.80952C1.70558 0 0 2.38781 0 5.33333V34.6667C0 37.6122 1.70558 40 3.80952 40H36.1905C38.2944 40 40 37.6122 40 34.6667V5.33333C40 2.38781 38.2944 0 36.1905 0Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_1620_184)">
+                        <path
+                            d="M36.1905 0H3.80952C1.70558 0 0 2.38781 0 5.33333V34.6667C0 37.6122 1.70558 40 3.80952 40H36.1905C38.2944 40 40 37.6122 40 34.6667V5.33333C40 2.38781 38.2944 0 36.1905 0Z"
+                            fill="#0034A9" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 26.6665H40V39.9998H0V26.6665Z"
+                            fill="#D7280F" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V13.3333H0V0Z" fill="white" />
+                    </g>
+                </g>
+                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#EFF1F4" />
+                <defs>
+                    <clipPath id="clip0_1620_184">
+                        <rect width="40" height="40" rx="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
         </div>
-    </div>
+    </nav>
 </header>

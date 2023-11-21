@@ -1,23 +1,35 @@
 .header {
     padding: 20px 100px;
+    width: 100%;
+    height: 120px;
 
     &__menu {
-        background-color: #bdbdbd;
+        background-color: #FFF;
         padding: 20px 24px;
         border-radius: 50px;
         gap: 10px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__nav {
-        list-style: none;
         display: flex;
+        width: 71%;
         gap: 20px;
         align-items: center;
-        justify-content: center;
-        &-element a {
-            text-decoration: none;
+        justify-content: left;
+
+        &-svg {
+            display: flex;
+            align-items: center;
+
+            &-element {
+                margin-left: 5px;
+            }
+        }
+
+        &-element {
             color: #20304A;
             font-family: 'Golos';
             font-size: 14px;
@@ -39,6 +51,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 30px;
+        padding-right: 40px;
 
         &-piece {
             color: #21A0AA;
@@ -47,6 +60,31 @@
             font-style: normal;
             font-weight: 600;
             line-height: 30px;
+        }
+    }
+
+    &__about {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-phone {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            text-wrap: nowrap;
+
+            &-piece {
+                color: #8A99B5;
+                font-family: 'Golos';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 18px;
+            }
         }
     }
 }
