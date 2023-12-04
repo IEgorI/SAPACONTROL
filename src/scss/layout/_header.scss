@@ -33,9 +33,6 @@
             color: #20304A;
             font-family: 'Golos';
             font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 18px;
         }
     }
 
@@ -48,18 +45,12 @@
         color: #F16D22;
         font-family: 'Golos';
         font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 30px;
         padding-right: 40px;
 
         &-piece {
             color: #21A0AA;
             font-family: 'Golos';
             font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 30px;
         }
     }
 
@@ -72,19 +63,16 @@
             color: #20304A;
             font-family: 'Golos';
             font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 18px;
             text-wrap: nowrap;
 
             &-piece {
                 color: #8A99B5;
                 font-family: 'Golos';
                 font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 18px;
             }
         }
     }
+}
+.header__nav-element:hover {
+    color: #F16D22
 }
