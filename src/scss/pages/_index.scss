@@ -103,6 +103,7 @@
         font-family: 'Golos';
         font-size: 16px;
         font-weight: 500;
+        text-wrap: nowrap;
     }
 
     &__image {
@@ -209,7 +210,6 @@
 
 }
 
-
 .statistic {
     padding: 80px 100px;
     display: flex;
@@ -249,10 +249,18 @@
         background-color: #FFF;
     }
 
+    &__rectangle {
+        border-radius: 0px 20px 20px 0px;
+        background:rgba(203, 204, 206, 0.33);;
+        width: 15px;
+        align-self: center;
+        height: 300px;
+    }
+
     &__info {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        height: 330px;
     }
 
 }
@@ -261,12 +269,12 @@
     border-radius: 20px;
     background: #FFF;
     padding: 40px;
-    width: 600px;
 
     &_item {
         display: flex;
         gap: 10px;
         align-items: center;
+        width: 520px;
     }
 
     &_item:not(:last-child) {
@@ -337,90 +345,95 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
 
-        &__title {
-            color: #FFF;
-            font-family: 'Golos';
-            font-size: 42px;
-            font-weight: 700;
+    &__title {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
 
-            p {
-                margin-top: 19px;
-            }
-
-            &-top {
-                margin-bottom: 7px;
-            }
-
-            &-piece {
-                color: #21A0AA;
-                padding: 15px 20px 20px 20px;
-                border-radius: 40px;
-                background-color: #FFF;
-            }
+        p {
+            margin-top: 19px;
         }
 
-        &__info {
-            color: #FFF;
-            font-family: 'Golos';
-            font-size: 16px;
-            font-weight: 500;
-        }
+    }
 
-        &__option {
-            display: flex;
-            gap: 10px;
+    &-piece {
+        color: #21A0AA;
+        padding: 15px 20px 20px 20px;
+        border-radius: 40px;
+        background-color: #FFF;
+        height: 64px;
+    }
 
+    &__info {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 500;
+    }
 
-            &__label {
-                position: absolute;
-                display: block;
-                margin-top: 6px;
-                margin-left: 30px;
-                color: #8A99B5;
-                font-family: 'Golos';
-                font-size: 12px;
-                font-weight: 400;
-            }
+    &__option {
+        display: flex;
+        gap: 10px;
+    }
 
-            &__input {
-                padding: 18px 30px;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                border-radius: 100px;
-                border: 1px solid #C1C1C1;
-                padding: 10px 30px 0px 30px;
-            }
+    &__label {
+        position: absolute;
+        display: block;
+        margin-top: 6px;
+        margin-left: 30px;
+        color: #8A99B5;
+        font-family: 'Golos';
+        font-size: 12px;
+        font-weight: 400;
+    }
 
-            &__btn {
-                width: 181px;
-                display: flex;
-                height: 55px;
-                padding: 15px 20px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 100px;
-                background: #F16D22;
-                color: #FFF;
-                font-family: 'Golos';
-                font-size: 16px;
-                border-color: #F16D22;
-            }
+    &__input {
+        padding: 18px 30px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        border-radius: 100px;
+        border: 1px solid #C1C1C1;
+        padding: 10px 30px 0px 30px;
+    }
 
-            &__btn:hover {
-                color: #000;
-                border: 2px solid #F16D22;
-                background: #FFF;
-            }
-        }
+    &__btn {
+        width: 181px;
+        display: flex;
+        height: 55px;
+        padding: 15px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background: #F16D22;
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 16px;
+        border-color: #F16D22;
+        text-wrap: nowrap;
+    }
 
-        &__footer {
-            color: rgba(255, 255, 255, 0.65);
-            font-family: 'Golos';
-            font-size: 12px;
-            font-weight: 400;
-        }
+    &__btn:hover {
+        color: #000;
+        border: 2px solid #F16D22;
+        background: #FFF;
+    }
+
+    &__footer {
+        color: rgba(255, 255, 255, 0.65);
+        font-family: 'Golos';
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__privacy {
+        color: rgba(255, 255, 255, 0.65);
+        font-family: 'Golos';
+        font-size: 12px;
+        font-weight: 400;
     }
 
     &__image {
