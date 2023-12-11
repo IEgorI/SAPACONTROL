@@ -1,6 +1,7 @@
 .social {
     display: flex;
     position: fixed;
+    z-index: 1003;
     flex-direction: column;
     gap: 8px;
     right: 0;
@@ -34,6 +35,9 @@
         font-family: 'Golos';
         font-size: 60px;
         font-weight: 700;
+        animation: banner-animation 2s ease-in-out 1 forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
     }
 
     &__text {
@@ -42,11 +46,17 @@
         font-family: 'Golos';
         font-size: 20px;
         font-weight: 500;
+        animation: banner-animation 2s ease-in-out 1 forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     &__option {
         gap: 10px;
         display: flex;
+        animation: banner-animation 2s ease-in-out 1 forwards;
+        animation-delay: 0.5s;
+        opacity: 0;
     }
 
     &__label {
@@ -87,7 +97,7 @@
         width: 13px;
         height: 13px;
         margin-top: 47px;
-        margin-left: 106px;
+        margin-left: 100px;
     }
 
     &__btn {
@@ -115,8 +125,26 @@
         color: #000;
         border: 2px solid #F16D22;
         background: #FFF;
+        transition: all 0.5s ease-out;
     }
 
+}
+
+@keyframes banner-animation {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-100px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .contract {
@@ -160,7 +188,7 @@
         background: rgba(203, 204, 206, 0.13);
     }
 
-    &__Rectangle:hover > .contract__rectangle{
+    &__Rectangle:hover>.contract__rectangle {
         background: rgba(33, 160, 170, 0.33);
     }
 }
@@ -211,6 +239,7 @@
 }
 
 .statistic {
+    transform: translateY(-65px);
     padding: 80px 100px;
     display: flex;
     flex-direction: column;
@@ -251,7 +280,8 @@
 
     &__rectangle {
         border-radius: 0px 20px 20px 0px;
-        background:rgba(203, 204, 206, 0.33);;
+        background: rgba(203, 204, 206, 0.33);
+        ;
         width: 15px;
         align-self: center;
         height: 300px;
@@ -335,10 +365,21 @@
 
 .leadform {
     display: flex;
+    position: relative;
     background-color: #21A0AA;
-    padding: 60px 150px;
+    padding: 110px 150px 60px 150px;
     gap: 30px;
     justify-content: center;
+
+    &__rectangle {
+        box-shadow: 5px black;
+        position: absolute;
+        top: 0;
+        height: 50px;
+        border-radius: 0px 0px 60px 60px;
+        background: #EFF1F4;
+        width: 100%;
+    }
 
     &__text {
         width: 695px;
@@ -420,6 +461,7 @@
         color: #000;
         border: 2px solid #F16D22;
         background: #FFF;
+        transition: all 0.5s ease-out;
     }
 
     &__footer {
@@ -441,3 +483,9 @@
         height: 341.537px;
     }
 }
+
+// @media screen and (min-width:1669px){
+//     .container {
+//         max-width: none;
+//     }
+// }
