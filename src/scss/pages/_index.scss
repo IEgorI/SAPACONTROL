@@ -36,8 +36,8 @@
         font-size: 60px;
         font-weight: 700;
         animation: banner-animation 2s ease-in-out 1 forwards;
-        animation-delay: 1.5s;
         opacity: 0;
+        animation-delay: 1.5s;
     }
 
     &__text {
@@ -113,7 +113,6 @@
         font-family: 'Golos';
         font-size: 16px;
         font-weight: 500;
-        text-wrap: nowrap;
     }
 
     &__image {
@@ -132,6 +131,10 @@
         transition: all 0.5s ease-out;
     }
 
+}
+
+.anim {
+    transform: translateY(-500px);
 }
 
 @keyframes banner-animation {
@@ -382,6 +385,13 @@
             height: 40px;
         }
     }
+
+    &_link {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
 .leadform {
@@ -396,7 +406,6 @@
     margin: 0 auto;
 
     &__rectangle {
-        box-shadow: 5px black;
         position: absolute;
         top: 0;
         height: 50px;
@@ -497,7 +506,6 @@
         font-family: 'Golos';
         font-size: 16px;
         border-color: #F16D22;
-        text-wrap: nowrap;
     }
 
     &__btn:hover {
@@ -526,3 +534,18 @@
         height: 341.537px;
     }
 }
+<<<<<<< HEAD
+=======
+
+.hiddenH2 {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+// @media screen and (min-width:1669px){
+//     .container {
+//         max-width: none;
+//     }
+// }
+>>>>>>> 3341407ab924aa0b73a0facf281440796647b215
