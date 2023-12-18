@@ -119,6 +119,10 @@
     &__image {
         padding-bottom: 100px;
         margin-right: 64px;
+
+        @media (max-width:768px){
+            display: none;
+        }
     }
 
     &__btn:hover {
@@ -155,6 +159,9 @@
     align-items: center;
     border-radius: 60px 60px 0px 0px;
     background: #FFF;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 
     &__title {
         color: #20304A;
@@ -176,9 +183,10 @@
         margin-bottom: 60px;
     }
 
-    &__groupRectangle {
+    &__group {
         display: flex;
-        gap: 80px;
+        flex-direction: column;
+        align-items: center ;
     }
 
     &__rectangle {
@@ -186,6 +194,8 @@
         height: 10px;
         border-radius: 20px 20px 0px 0px;
         background: rgba(203, 204, 206, 0.13);
+        transition: background-color 0.5s ease;
+        cursor: pointer;
     }
 
     &__Rectangle:hover>.contract__rectangle {
@@ -199,6 +209,7 @@
 
     &__card {
         width: 400px;
+        height: 481px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -206,6 +217,8 @@
         gap: 24px;
         border-radius: 20px;
         background: #EFF1F4;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
     }
 
     &__title {
@@ -236,11 +249,14 @@
         background: rgba(33, 160, 170, 0.33);
     }
 
+    @media (max-width:768px){
+        flex-wrap: wrap;
+    }
 }
 
 .statistic {
     transform: translateY(-65px);
-    padding: 80px 100px;
+    padding: 80px 100px 0px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -248,6 +264,9 @@
     justify-content: space-between;
     border-radius: 60px;
     background: #EFF1F4;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 
     &__title {
         color: #20304A;
@@ -272,6 +291,10 @@
         font-family: 'Golos';
         font-size: 16px;
         font-weight: 500;
+
+        &--selected {
+            background-color: #FFF;
+        }
     }
 
     &__item:hover {
@@ -281,7 +304,6 @@
     &__rectangle {
         border-radius: 0px 20px 20px 0px;
         background: rgba(203, 204, 206, 0.33);
-        ;
         width: 15px;
         align-self: center;
         height: 300px;
@@ -290,7 +312,6 @@
     &__info {
         display: flex;
         justify-content: space-between;
-        height: 330px;
     }
 
 }
@@ -370,6 +391,9 @@
     padding: 110px 150px 60px 150px;
     gap: 30px;
     justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 
     &__rectangle {
         box-shadow: 5px black;
@@ -378,7 +402,9 @@
         height: 50px;
         border-radius: 0px 0px 60px 60px;
         background: #EFF1F4;
+        max-width: 1920px;
         width: 100%;
+        margin: 0 auto;
     }
 
     &__text {
@@ -402,10 +428,27 @@
 
     &-piece {
         color: #21A0AA;
-        padding: 15px 20px 20px 20px;
-        border-radius: 40px;
-        background-color: #FFF;
-        height: 64px;
+        display: inline-block;
+        position: relative;
+        padding: 7px 20px 15px;
+        z-index: 1;
+        font-size: 42px;
+        line-height: 42px;
+        margin-top: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #FFF;
+            border-radius: 40px;
+            z-index: -1;
+            }
     }
 
     &__info {
@@ -483,9 +526,3 @@
         height: 341.537px;
     }
 }
-
-// @media screen and (min-width:1669px){
-//     .container {
-//         max-width: none;
-//     }
-// }
