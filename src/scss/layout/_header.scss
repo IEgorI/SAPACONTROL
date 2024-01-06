@@ -72,6 +72,10 @@
         @media (max-width:768px) {
             margin-left: 20px;            
         }
+
+        @media (max-width:375px) {
+            font-size: 20px;            
+        }
     }
 
     &-piece {
@@ -79,6 +83,10 @@
         font-family: 'Golos';
         font-weight: 600;
         font-size: 24px;
+
+        @media (max-width:375px) {
+            font-size: 20px;            
+        }
     }
 
     &-svg {
@@ -91,9 +99,31 @@
         align-items: center;
         gap: 20px;
 
-        @media (max-width:768px) {
-            display: none;            
+    }
+
+    @media (max-width:768px) {
+        &__menu {
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            position: absolute;  
+            background-color: grey;
+            text-align: center;      
+            right: 0;
+            left: 0;        
         }
+
+        #checkbox_toggle:checked ~ &__menu {
+            display: flex;
+            flex-direction: column;
+            border-radius: 50px;
+            max-height: 100%;
+            align-items: center;
+            margin-top: 220px;
+            transition: all .5s;
+            z-index: 1001;
+        }
+        
     }
 
     &__menu li:nth-child(1) {
@@ -160,12 +190,12 @@
             font-size: 14px;
             font-weight: 500;
             
-            @media (max-width:375px) {
+            @media (max-width:682px) {
                 display: none;
             }
         }
 
-        @media (max-width:375px) {
+        @media (max-width:682px) {
             display: none;
         }
     }

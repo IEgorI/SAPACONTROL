@@ -35,7 +35,6 @@
     }
 
     &__title {
-        width: 100%;
         color: #20304A;
         font-family: 'Golos';
         font-size: 60px;
@@ -43,10 +42,13 @@
         animation: banner-animation 2s ease-in-out 1 forwards;
         opacity: 0;
         animation-delay: 1.5s;
+
+        @media (max-width:375px) {
+            font-size: 28px;
+        }
     }
 
     &__text {
-        width: 100%;
         color: #8A99B5;
         font-family: 'Golos';
         font-size: 20px;
@@ -54,6 +56,10 @@
         animation: banner-animation 2s ease-in-out 1 forwards;
         animation-delay: 1s;
         opacity: 0;
+
+        @media (max-width:375px) {
+            font-size: 16px;
+        }
     }
 
     &__option {
@@ -62,6 +68,10 @@
         animation: banner-animation 2s ease-in-out 1 forwards;
         animation-delay: 0.5s;
         opacity: 0;
+
+        @media (max-width:375px) {
+            flex-direction: column;
+        }
     }
 
     &__label {
@@ -87,6 +97,10 @@
         font-family: 'Golos';
         font-size: 14px;
         font-weight: 500;
+
+        @media (max-width:375px) {
+            width: 100%;
+        }
     }
 
     &__Line {
@@ -118,6 +132,10 @@
         font-family: 'Golos';
         font-size: 16px;
         font-weight: 500;
+
+        @media (max-width:375px) {
+            width: 100%;
+        }
     }
 
     &__image {
@@ -162,7 +180,6 @@
 .contract {
     padding: 80px 100px 100px 100px;
     display: flex;
-    height: 1000px;
     flex-direction: column;
     align-items: center;
     border-radius: 60px 60px 0px 0px;
@@ -173,7 +190,6 @@
 
     &__title {
         color: #20304A;
-        width: 820px;
         text-align: center;
         font-family: 'Golos';
         font-size: 42px;
@@ -182,7 +198,6 @@
     }
 
     &__text {
-        width: 820px;
         color: #20304A;
         text-align: center;
         font-family: 'Golos';
@@ -204,6 +219,14 @@
         background: rgba(203, 204, 206, 0.13);
         transition: background-color 0.5s ease;
         cursor: pointer;
+        @media (max-width:768px) {
+            width: 294px;
+        }
+
+        @media (max-width:768px) {
+            width: 275px;
+        }
+
     }
 
     &__Rectangle:hover>.contract__rectangle {
@@ -214,6 +237,7 @@
 .contract__cards {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 
     &__card {
         width: 400px;
@@ -227,6 +251,14 @@
         background: #EFF1F4;
         transition: background-color 0.5s ease;
         cursor: pointer;
+        @media (max-width:768px) {
+            width: 354px;
+
+        }
+
+        @media (max-width:375px) {
+            width: 335px;
+        }
     }
 
     &__title {
@@ -257,8 +289,8 @@
         background: rgba(33, 160, 170, 0.33);
     }
 
-    @media (max-width:768px){
-        flex-wrap: wrap;
+    @media (max-width:1036px){
+        justify-content: center;
     }
 }
 
@@ -411,29 +443,31 @@
 }
 
 .leadform {
-    display: flex;
     position: relative;
     background-color: #21A0AA;
     padding: 110px 150px 60px 150px;
     gap: 30px;
-    justify-content: center;
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
 
+    @media (max-width:768px) {
+        padding: 120px 20px 60px 20px;
+    }
+
     &__rectangle {
         position: absolute;
-        top: 0;
         height: 50px;
         border-radius: 0px 0px 60px 60px;
         background: #EFF1F4;
         max-width: 1920px;
         width: 100%;
         margin: 0 auto;
+        left: 0;
+        top: 0;
     }
 
     &__text {
-        width: 695px;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -548,5 +582,13 @@
     &__image {
         width: 415px;
         height: 341.537px;
+        @media (max-width:768px) {
+            display: none;            
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
     }
 }
