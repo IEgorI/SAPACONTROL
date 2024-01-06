@@ -15,6 +15,10 @@
     height: 662px;
     background: #EFF1F4;
 
+    @media (max-width:768px) {
+        padding: 60px 20px;
+    }
+
     &__group {
         display: flex;
         gap: 64px;
@@ -27,6 +31,7 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+
     }
 
     &__title {
@@ -285,6 +290,13 @@
         border: 1px solid #8A99B5;
         border-radius: 100px;
         padding: 0px;
+        flex-wrap: wrap;
+
+        @media (max-width:940px){
+            border: none;
+            border-radius: 0px;
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -299,6 +311,10 @@
             background-color: #FFF;
         }
     }
+
+    // &__btn {
+    //     text-wrap: nowrap;
+    // }
 
     &__item:hover {
         background-color: #FFF;
@@ -534,18 +550,3 @@
         height: 341.537px;
     }
 }
-<<<<<<< HEAD
-=======
-
-.hiddenH2 {
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-}
-
-// @media screen and (min-width:1669px){
-//     .container {
-//         max-width: none;
-//     }
-// }
->>>>>>> 3341407ab924aa0b73a0facf281440796647b215
