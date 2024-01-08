@@ -697,7 +697,6 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: start;
     }
 
     &__rectangle {
@@ -962,34 +961,34 @@
     }
 
     &__card:nth-child(1) {
-        background-image: url("/assets/images/Al.png");
+        background-image: url("../assets/images/Al.png");
         background-repeat: no-repeat;
     }
 
     &__card:nth-child(1):hover {
-        background-image: url("/assets/images/AlActive.png");
+        background-image: url("../assets/images/AlActive.png");
         background-repeat: no-repeat;
         transition: all 5 ease-in-out;
     }
 
     &__card:nth-child(2) {
-        background-image: url("/assets/images/Vl.png");
+        background-image: url("../assets/images/Vl.png");
         background-repeat: no-repeat;
     }    
 
     &__card:nth-child(2):hover {
-        background-image: url("/assets/images/VlActive.png");
+        background-image: url("../assets/images/VlActive.png");
         background-repeat: no-repeat;
         transition: all 0.5 ease-in-out;
     }
     
     &__card:nth-child(3) {
-        background-image: url("/assets/images/An.png");
+        background-image: url("../assets/images/An.png");
         background-repeat: no-repeat;
     }
 
     &__card:nth-child(3):hover {
-        background-image: url("/assets/images/AnActive.png");
+        background-image: url("../assets/images/AnActive.png");
         background-repeat: no-repeat;
         transition: all 0.5 ease-in-out;
     }
