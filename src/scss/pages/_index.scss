@@ -847,7 +847,7 @@
     }
 
     &__item {
-        width: 40xp;
+        width: 40px;
         height: 40px;
     }
 
@@ -897,7 +897,7 @@
     }
 
     &__group:hover {
-        
+
         &__rectangle {
             background: rgba(241, 109, 34, 0.33);
         }
@@ -974,14 +974,14 @@
     &__card:nth-child(2) {
         background-image: url("../assets/images/Vl.png");
         background-repeat: no-repeat;
-    }    
+    }
 
     &__card:nth-child(2):hover {
         background-image: url("../assets/images/VlActive.png");
         background-repeat: no-repeat;
         transition: all 0.5 ease-in-out;
     }
-    
+
     &__card:nth-child(3) {
         background-image: url("../assets/images/An.png");
         background-repeat: no-repeat;
