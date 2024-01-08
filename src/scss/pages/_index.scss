@@ -142,7 +142,7 @@
         padding-bottom: 100px;
         margin-right: 64px;
 
-        @media (max-width:768px){
+        @media (max-width:768px) {
             display: none;
         }
     }
@@ -217,7 +217,7 @@
     &__group {
         display: flex;
         flex-direction: column;
-        align-items: center ;
+        align-items: center;
     }
 
     &__rectangle {
@@ -227,6 +227,7 @@
         background: rgba(203, 204, 206, 0.13);
         transition: background-color 0.5s ease;
         cursor: pointer;
+
         @media (max-width:768px) {
             width: 294px;
         }
@@ -259,6 +260,7 @@
         background: #EFF1F4;
         transition: background-color 0.5s ease;
         cursor: pointer;
+
         @media (max-width:768px) {
             width: 354px;
 
@@ -297,7 +299,7 @@
         background: rgba(33, 160, 170, 0.33);
     }
 
-    @media (max-width:1036px){
+    @media (max-width:1036px) {
         justify-content: center;
     }
 }
@@ -332,7 +334,7 @@
         padding: 0px;
         flex-wrap: wrap;
 
-        @media (max-width:1133px){
+        @media (max-width:1133px) {
             border: none;
             border-radius: 0px;
             justify-content: center;
@@ -545,7 +547,8 @@
             background-color: #FFF;
             border-radius: 40px;
             z-index: -1;
-            }
+        }
+
         @media (max-width:572px) {
             font-size: 24px;
             padding: 7px 20px 10px;
@@ -646,5 +649,395 @@
     &__group {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+.priem {
+    padding: 80px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 60px 60px 0px 0px;
+    background: #FFF;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        padding: 80px 10px 100px 10px;
+    }
+
+    &__rectangleTop {
+        width: 100%;
+        position: absolute;
+        height: 50px;
+        background-color: #21A0AA;
+        top: 0;
+        z-index: -100;
+    }
+
+    &__title {
+        color: #20304A;
+        text-align: center;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+
+    &__rectangle {
+        width: 340px;
+        height: 10px;
+        border-radius: 0px 0px 20px 20px;
+        background: rgba(203, 204, 206, 0.13);
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+
+        @media (max-width:768px) {
+            width: 294px;
+        }
+
+        @media (max-width:768px) {
+            width: 275px;
+        }
+
+    }
+
+    &__Rectangle:hover>.priem__rectangle {
+        background: rgba(33, 160, 170, 0.33);
+    }
+
+    &__btn {
+        display: flex;
+        padding: 15px 20px;
+        justify-content: center;
+        margin-top: 40px;
+        align-items: center;
+        border-radius: 100px;
+        border: 1px solid #8A99B5;
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__btn:hover {
+        background: #FFF;
+        border: 1px solid #FFF;
+    }
+}
+
+.priem__cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__card {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+        border-radius: 20px;
+        border: 1px solid #CBCCCE;
+        background: #FFF;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+
+        @media (max-width:768px) {
+            width: 354px;
+        }
+
+        @media (max-width:375px) {
+            width: 335px;
+        }
+    }
+
+    &__title {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 20px;
+        font-weight: 600;
+        padding: 0 20px;
+    }
+
+    &__text {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+
+    &__card:hover .priem__rectangle {
+        background: rgba(33, 160, 170, 0.33);
+    }
+
+    &_piece {
+        color: #21A0AA;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    &__cost {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    &__total {
+        color: #21A0AA;
+        text-align: center;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 30px;
+        border: 1px solid #21A0AA;
+        display: flex;
+        padding: 5px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width:1036px) {
+        justify-content: center;
+    }
+}
+
+.otziv {
+    padding: 80px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        padding: 80px 10px 100px 10px;
+    }
+
+    &__title {
+        width: 100%;
+        padding: 0px 100px 40px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 40xp;
+        height: 40px;
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    &__rectangle {
+        width: 340px;
+        height: 10px;
+        border-radius: 0px 0px 20px 20px;
+        background: rgba(203, 204, 206, 0.13);
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+        position: absolute;
+        bottom: -24px;
+        left: 30px;
+
+        @media (max-width:768px) {
+            width: 294px;
+        }
+
+        @media (max-width:768px) {
+            width: 275px;
+        }
+    }
+
+    &__rectangle:hover {
+        background: rgba(241, 109, 34, 0.33);
+    }
+
+    &__group {
+        position: relative;
+    }
+
+    &__group:hover {
+        
+        &__rectangle {
+            background: rgba(241, 109, 34, 0.33);
+        }
+    }
+
+    &__btn {
+        display: flex;
+        padding: 15px 20px;
+        justify-content: center;
+        margin-top: 40px;
+        align-items: center;
+        border-radius: 100px;
+        border: 1px solid #8A99B5;
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__btn:hover {
+        background: #FFF;
+        border: 1px solid #FFF;
+    }
+}
+
+.otziv__cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__card {
+        width: 400px;
+        height: 484px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+
+        @media (max-width:768px) {
+            width: 354px;
+        }
+
+        @media (max-width:375px) {
+            width: 335px;
+        }
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+        display: none;
+        position: absolute;
+        top: 188px;
+        right: 157px;
+    }
+
+    &__card:hover {
+        .otziv__cards__image {
+            display: flex;
+        }
+    }
+
+    &__card:nth-child(1) {
+        background-image: url("/assets/images/Al.png");
+        background-repeat: no-repeat;
+    }
+
+    &__card:nth-child(1):hover {
+        background-image: url("/assets/images/AlActive.png");
+        background-repeat: no-repeat;
+        transition: all 5 ease-in-out;
+    }
+
+    &__card:nth-child(2) {
+        background-image: url("/assets/images/Vl.png");
+        background-repeat: no-repeat;
+    }    
+
+    &__card:nth-child(2):hover {
+        background-image: url("/assets/images/VlActive.png");
+        background-repeat: no-repeat;
+        transition: all 0.5 ease-in-out;
+    }
+    
+    &__card:nth-child(3) {
+        background-image: url("/assets/images/An.png");
+        background-repeat: no-repeat;
+    }
+
+    &__card:nth-child(3):hover {
+        background-image: url("/assets/images/AnActive.png");
+        background-repeat: no-repeat;
+        transition: all 0.5 ease-in-out;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: 293px 16px 26px 20px;
+    }
+
+    &__name {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__place {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    &__room {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__cost {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    @media (max-width:1036px) {
+        justify-content: center;
     }
 }

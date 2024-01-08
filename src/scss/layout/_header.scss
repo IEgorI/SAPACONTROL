@@ -126,7 +126,6 @@
             align-items: center;
             transform: translateY(130px);
             transition: all .5s;
-
             background-color: #FFF;
             padding: 15px 0;
             max-width: 711px;
@@ -149,6 +148,7 @@
         opacity: 0;
         animation: appear 2s ease-in-out 1 forwards;
         animation-delay: .5s;
+
         @media (max-width:768px) {
             opacity: 1;
             animation: none;
