@@ -1040,3 +1040,99 @@
         justify-content: center;
     }
 }
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 100px;
+    border-radius: 60px;
+    position: relative;
+    background: #EFF1F4;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width:1000px) {
+        padding: 80px 20px;
+    }
+
+    &__rectangleTop {
+        width: 100%;
+        position: absolute;
+        height: 50px;
+        background-color: #FFF;
+        top: 0;
+        z-index: -100;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        color: #20304A;
+        text-align: center;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+
+        @media (max-width:420px) {
+            color: #20304A;
+            text-align: center;
+            font-family: 'Golos';
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &__group {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__process {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+
+        @media (max-width:1000px) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        padding-top: 20px;
+        padding-left: 60px;
+
+        @media (max-width:1000px) {
+            display: none;
+            pointer-events: none;
+        }
+    }
+}
+
+.work__item {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FFF;
+
+    &_option {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &_btn {
+        color: #21A0AA;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

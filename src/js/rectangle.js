@@ -143,39 +143,26 @@ const hover = () => {
             targetElement.addEventListener('mouseenter', function(e){ // Вешаем на него обработчик mouseenter - при наведение мыши на элемент
                 e.target.style.backgroundColor = 'rgba(33, 160, 170, 0.33)'; // Выставляем цвет
                 if (Id == "rectangle4"){
-                    cardPriem[0].style.backgroundColor = '#21A0AA';
-                    cardPriem[0].style.color = 'red';
-                    cardPriem[0].children.item(1).style.color = '#FFF';
-                    cardPriem[0].children.item(0).style.color = '#FFF';
+                    cardPriem[0].style.border = '1px solid #21A0AA';
                 }
                 if (Id == "rectangle5"){
-                    cardPriem[1].style.backgroundColor = '#21A0AA';
-                    cardPriem[1].children.item(1).style.color = '#FFF';
-                    cardPriem[1].children.item(0).style.color = '#FFF';
+                    cardPriem[1].style.border = '1px solid #21A0AA';
                 }
                 if (Id == "rectangle6"){
-                    cardPriem[2].style.backgroundColor = '#21A0AA';
-                    cardPriem[2].children.item(1).style.color = '#FFF';
-                    cardPriem[2].children.item(0).style.color = '#FFF';
+                    cardPriem[2].style.border = '1px solid #21A0AA';
                 }
             });
             
             targetElement.addEventListener('mouseleave', function(e){ // И ещё обработчик mouseleave - при "уходе" курсора с элемента
                 e.target.style.backgroundColor = ''; // Убираем выданный цвет\
                 if (Id == "rectangle4"){
-                    cardPriem[0].style.backgroundColor = '';
-                    cardPriem[0].children.item(1).style.color = '';
-                    cardPriem[0].children.item(0).style.color = '';
+                    cardPriem[0].style.border = '1px solid #CBCCCE';
                 }
                 if (Id == "rectangle5"){
-                    cardPriem[1].style.backgroundColor = '';
-                    cardPriem[1].children.item(1).style.color = '';
-                    cardPriem[1].children.item(0).style.color = '';
+                    cardPriem[1].style.border = '1px solid #CBCCCE';
                 }
                 if (Id == "rectangle6"){
-                    cardPriem[2].style.backgroundColor = '';
-                    cardPriem[2].children.item(1).style.color = '';
-                    cardPriem[2].children.item(0).style.color = '';
+                    cardPriem[2].style.border = '1px solid #CBCCCE';
                 }
             });
         }
