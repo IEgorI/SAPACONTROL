@@ -1053,7 +1053,7 @@
     width: 100%;
     margin: 0 auto;
 
-    @media (max-width:1000px) {
+    @media (max-width:1290px) {
         padding: 80px 20px;
     }
 
@@ -1086,6 +1086,7 @@
     &__group {
         display: flex;
         gap: 20px;
+        justify-content: space-between;
     }
 
     &__process {
@@ -1094,7 +1095,7 @@
         gap: 20px;
         width: 50%;
 
-        @media (max-width:1000px) {
+        @media (max-width:1290px) {
             width: 100%;
         }
     }
@@ -1103,7 +1104,7 @@
         padding-top: 20px;
         padding-left: 60px;
 
-        @media (max-width:1000px) {
+        @media (max-width:1290px) {
             display: none;
             pointer-events: none;
         }
@@ -1134,5 +1135,181 @@
         font-family: 'Golos';
         font-size: 16px;
         font-weight: 500;
+    }
+}
+
+.form {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+
+    @media (max-width:1290px) {
+        padding: 60px 20px;
+    }
+
+    &__main {
+        border-radius: 60px;
+        background: #21A0AA;
+        display: flex;
+        padding: 60px 100px;
+        align-items: center;
+
+        @media (max-width:1290px) {
+            padding: 40px 20px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+        }
+    }
+
+    &__discount {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media (max-width:460px) {
+            gap: 10px;
+        }
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+
+        @media (max-width:460px) {
+            color: #FFF;
+            font-family: 'Golos';
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    &__cost {
+        width: 286px;
+        display: flex;
+        justify-content: center;
+        text-wrap: nowrap;
+        height: 83px;
+        border-radius: 40px;
+        padding: 15px 20px 20px 20px;
+        background: #FFF;
+        color: #F16D22;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+        border: none;
+
+        @media (max-width:460px) {
+            display: flex;
+            align-items: center;
+            height: 63px;
+            width: 181px;
+            color: #F16D22;
+            font-family: 'Golos';
+            font-size: 24px;
+            font-weight: 700;
+            padding: 5px 20px 10px 20px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media (max-width:460px) {
+            gap: 20px;
+        }
+    }
+
+    &__info {
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 20px;
+        font-weight: 400;
+
+        @media (max-width:460px) {
+            color: #FFF;
+            font-family: 'Golos';
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    &__option {
+        display: flex;
+        gap: 10px;
+
+        @media (max-width:572px) {
+            flex-direction: column;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        display: block;
+        margin-top: 6px;
+        margin-left: 30px;
+        color: #8A99B5;
+        font-family: 'Golos';
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__input {
+        padding: 18px 30px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        border-radius: 100px;
+        border: 1px solid #C1C1C1;
+        padding: 10px 30px 0px 30px;
+
+        @media (max-width:572px) {
+            height: 55px;
+        }
+    }
+
+    &__btn {
+        width: 181px;
+        display: flex;
+        height: 55px;
+        padding: 15px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background: #F16D22;
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 16px;
+        border-color: #F16D22;
+
+        @media (max-width:572px) {
+            width: 100%;
+        }
+    }
+
+    &__btn:hover {
+        color: #000;
+        border: 2px solid #F16D22;
+        background: #FFF;
+        transition: all 0.5s ease-out;
+    }
+
+    &__footer {
+        color: rgba(255, 255, 255, 0.65);
+        font-family: 'Golos';
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__privacy {
+        color: rgba(255, 255, 255, 0.65);
+        font-family: 'Golos';
+        font-size: 12px;
+        font-weight: 400;
     }
 }
