@@ -840,7 +840,6 @@
 
     &__title {
         width: 100%;
-        padding: 0px 100px 40px 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1484,5 +1483,156 @@
     &_icon {
         width: 40px;
         height: 40px;
+    }
+}
+
+.devices {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 100px;
+    gap: 40px;
+    border-radius: 60px;
+    background: #FFF;
+
+    @media (max-width:1367px) {
+        padding: 80px 20px;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__text {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+
+        @media (max-width:610px) {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &__katalog {
+        display: flex;
+        gap: 40px;
+        border-radius: 30px;
+        background: #EFF1F4;
+        padding: 40px 40px 20px 40px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__item:hover {
+        .devices__image {
+            border: 1px solid #F16D22;
+            border-radius: 10px;
+        }
+
+        .devices__label {
+            color: #F16D22;
+        }
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+    }
+
+    &__label {
+        color: #20304A;
+        text-align: center;
+        font-family: 'Euclid Circular A';
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__picture {
+        width: 400px;
+        height: 400px;
+
+        @media (max-width:1367px) {
+            width: 176px;
+            height: 243px;
+        }
+
+        @media (max-width:610px) {
+            display: none;
+        }
+    }
+}
+
+.devices__description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px 80px 100px;
+
+    @media (max-width:1367px) {
+        padding: 0;
+    }
+
+    @media (max-width:610px) {
+        gap: 20px;
+    }
+
+    &_title {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 26px;
+        font-weight: 600;
+
+        @media (max-width:610px) {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+
+    &_text {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 400;
+
+        @media (max-width:610px) {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 12px;
+            font-weight: 400;
+        }
     }
 }
