@@ -833,6 +833,7 @@
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+    gap: 40px;
 
     @media (max-width:768px) {
         padding: 80px 10px 100px 10px;
@@ -906,7 +907,6 @@
         display: flex;
         padding: 15px 20px;
         justify-content: center;
-        margin-top: 40px;
         align-items: center;
         border-radius: 100px;
         border: 1px solid #8A99B5;
