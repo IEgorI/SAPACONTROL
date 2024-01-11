@@ -1380,7 +1380,14 @@
         color: #FFF;
         font-family: 'Golos';
         font-size: 16px;
-        border-color: #F16D22;
+        border-color: transparent;
+    }
+
+    &__btn:hover {
+        color: #000;
+        border: 2px solid #F16D22;
+        background: #FFF;
+        transition: all 0.5s ease-out;
     }
 
     &__cards {
@@ -1634,5 +1641,81 @@
             font-size: 12px;
             font-weight: 400;
         }
+    }
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 100px;
+    gap: 40px;
+
+    &__title {
+        color: #20304A;
+        text-align: center;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        padding: 0 105px;
+        gap: 5px;
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+        gap: 5px;
+    }
+
+    &__text {
+        padding: 30px 40px;
+        border-radius: 20px 0px 0px 20px;
+        background: #FFF;
+        width: 100%;
+    }
+
+    &__open {
+        padding: 30px 40px;
+        border-radius: 0px 20px 20px 0px;
+        background: #FFF;
+    }
+
+    &__image {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__btn {
+        width: 160px;
+        height: 55px;
+        color: #FFF;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        padding: 15px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background: #F16D22;
+        font-family: 'Golos';
+        font-size: 16px;
+        border:2px solid #F16D22;
+    }
+
+    &__btn:hover {
+        color: #000;
+        border: 2px solid #F16D22;
+        background: #FFF;
+        transition: all 0.5s ease-out;
     }
 }
