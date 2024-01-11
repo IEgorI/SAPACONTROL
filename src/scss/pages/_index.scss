@@ -1655,12 +1655,29 @@
     padding: 80px 100px;
     gap: 40px;
 
+    @media (max-width:1100px) {
+        padding: 60px 20px;
+    }
+
+    @media (max-width:530px) {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
     &__title {
         color: #20304A;
         text-align: center;
         font-family: 'Golos';
         font-size: 42px;
         font-weight: 700;
+
+        @media (max-width:530px) {
+            color: #20304A;
+            text-align: center;
+            font-family: 'Golos';
+            font-size: 24px;
+            font-weight: 700;
+        }
     }
 
     &__items {
@@ -1668,6 +1685,10 @@
         flex-direction: column;
         padding: 0 105px;
         gap: 5px;
+
+        @media (max-width:1100px) {
+            padding: 0 0;
+        }
     }
 
     &__item {
@@ -1677,16 +1698,34 @@
     }
 
     &__text {
+        display: flex;
+        align-items: center;
         padding: 30px 40px;
         border-radius: 20px 0px 0px 20px;
         background: #FFF;
         width: 100%;
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 20px;
+        font-weight: 500;
+
+        @media (max-width:530px) {
+            padding: 30px 20px;
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 
     &__open {
         padding: 30px 40px;
         border-radius: 0px 20px 20px 0px;
         background: #FFF;
+
+        @media (max-width:530px) {
+            padding: 42px 20px;
+        }
     }
 
     &__image {
@@ -1709,7 +1748,7 @@
         background: #F16D22;
         font-family: 'Golos';
         font-size: 16px;
-        border:2px solid #F16D22;
+        border: 2px solid #F16D22;
     }
 
     &__btn:hover {
