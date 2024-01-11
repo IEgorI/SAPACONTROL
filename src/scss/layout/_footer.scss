@@ -17,6 +17,11 @@
         @media (max-width:770px) {
             padding: 40px 20px 0 20px;
         }
+
+        @media (max-width:374px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &__left {
@@ -44,6 +49,13 @@
         font-family: 'Golos';
         font-size: 14px;
         font-weight: 400;
+
+        @media (max-width:485px) {
+            color: #499DDF;
+            font-family: 'Golos';
+            font-size: 12px;
+            font-weight: 400;
+        }
     }
 
     &__image {
@@ -64,6 +76,13 @@
         font-family: 'Golos';
         font-size: 26px;
         font-weight: 600;
+
+        @media (max-width:485px) {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 
     &__time {
@@ -71,6 +90,13 @@
         font-family: 'Golos';
         font-size: 14px;
         font-weight: 400;
+
+        @media (max-width:485px) {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 12px;
+            font-weight: 400;
+        }
     }
 
     &__social {
@@ -97,6 +123,10 @@
             flex-direction: column;
             gap: 20px;
         }
+
+        @media (max-width:374px) {
+            flex-direction: column;
+        }
     }
 
     &__middle {
@@ -117,6 +147,13 @@
         font-family: 'Golos';
         font-size: 26px;
         font-weight: 600;
+
+        @media (max-width:485px) {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 
     &__item {
