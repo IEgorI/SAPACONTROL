@@ -1699,12 +1699,17 @@
 
     &__group {
         display: flex;
+        width: 913px;
+        justify-content: center;
         flex-direction: column;
         gap: 10px;
         border-radius: 20px 0px 0px 20px;
         padding: 30px 40px;
         background: #FFF;
-        width: 100%;
+
+        @media (max-width:1100px) {
+            width: 100%;
+        }
     }
 
     &__heading {
@@ -1767,5 +1772,141 @@
         border: 2px solid #F16D22;
         background: #FFF;
         transition: all 0.5s ease-out;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 100px;
+    gap: 40px;
+
+    @media (max-width:768px) {
+        padding: 60px 20px;
+    }
+
+    &__title {
+        color: #20304A;
+        text-align: center;
+        font-family: 'Golos';
+        font-size: 42px;
+        font-weight: 700;
+
+        @media (max-width:400px) {
+            color: #20304A;
+            text-align: center;
+            font-family: 'Golos';
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__card {
+        width: 400px;
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px;
+        border-radius: 20px;
+        background: #FFF;
+
+        @media (max-width:1457px) {
+            width: 354px;
+        }
+
+        @media (max-width:400px) {
+            width: 335px;
+        }
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__heading {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__text {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_piece {
+            color: #20304A;
+            font-family: 'Euclid Circular A';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__tg {
+        width: 42px;
+        height: 42px;
+    }
+
+    &__whatsApp {
+        width: 42px;
+        height: 42px;
+    }
+
+    &__rectangle {
+        width: 340px;
+        height: 10px;
+        border-radius: 0px 0px 20px 20px;
+        background: rgba(203, 204, 206, 0.33);
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+
+        @media (max-width:1457px) {
+            width: 300px;
+        }
+
+        @media (max-width:768px) {
+            width: 275px;
+        }
+    }
+
+    &__policy {
+        color: #8A99B5;
+        font-family: 'Golos';
+        font-size: 12px;
+        font-weight: 400;
     }
 }

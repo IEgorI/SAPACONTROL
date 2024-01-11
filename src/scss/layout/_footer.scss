@@ -1,0 +1,186 @@
+.footer {
+    border-radius: 60px 60px 0px 0px;
+    background: #FFF;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__columns {
+        display: flex;
+        padding: 60px 100px;
+
+        @media (max-width:1085px) {
+            justify-content: space-between;
+            padding: 60px 20px 40px 20px;
+        }
+
+        @media (max-width:770px) {
+            padding: 40px 20px 0 20px;
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 33%;
+
+        @media (max-width:1085px) {
+            margin-right: 180px;
+            width: 100%;
+        }
+
+        @media (max-width:770px) {
+            margin-right: 20px;
+            width: 100%;
+        }
+    }
+
+    &__map {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #499DDF;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__image {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__contacts {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__email,
+    &__phone {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    &__time {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__social {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__tg {
+        width: 42px;
+        height: 42px;
+    }
+
+    &__whatsApp {
+        width: 42px;
+        height: 42px;
+    }
+
+    &__group {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+        @media (max-width:770px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 33%;
+
+        @media (max-width:1085px) {
+            margin-right: 20px;
+            width: 100%;
+        }
+    }
+
+    &__client,
+    &__company {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    &__item {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 400;
+
+        @media (max-width:770px) {
+            color: #20304A;
+            font-family: 'Golos';
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 33%;
+
+        @media (max-width:1085px) {
+            width: 100%;
+        }
+    }
+
+}
+
+.footer__copiright {
+    display: flex;
+    padding: 0 100px 40px 100px;
+
+    &_left {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 400;
+        width: 33%;
+    }
+
+    &_middle {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 400;
+        width: 33%;
+    }
+
+    &_right {
+        color: #20304A;
+        font-family: 'Golos';
+        font-size: 14px;
+        font-weight: 400;
+        width: 33%;
+    }
+
+    @media (max-width:1085px) {
+        padding: 0 20px 40px 20px;
+    }
+
+    @media (max-width:770px) {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+}
