@@ -883,8 +883,9 @@
             width: 294px;
         }
 
-        @media (max-width:768px) {
+        @media (max-width:376px) {
             width: 275px;
+            bottom: 0;
         }
     }
 
@@ -927,6 +928,10 @@
     gap: 20px;
     flex-wrap: wrap;
 
+    @media (max-width:743px) {
+        gap: 0;
+    }
+
     &__card {
         width: 400px;
         height: 484px;
@@ -937,6 +942,7 @@
 
         @media (max-width:768px) {
             width: 354px;
+            background-size: contain;
         }
 
         @media (max-width:375px) {
@@ -951,6 +957,11 @@
         position: absolute;
         top: 188px;
         right: 157px;
+
+        @media (max-width:768px) {
+            top: 167px;
+            right: 137px;
+        }
     }
 
     &__card:hover {
@@ -996,6 +1007,10 @@
         display: flex;
         flex-direction: column;
         padding: 293px 16px 26px 20px;
+
+        @media (max-width:768px) {
+            padding: 237px 16px 26px 20px;
+        }
     }
 
     &__name {
