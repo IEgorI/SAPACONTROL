@@ -5,10 +5,6 @@ const slider = () => {
     document.addEventListener('click', function (event) {
         var otziv__cards = document.getElementsByClassName("otziv__cards");
 
-        console.log(otziv__cards[0].children[0].style.order);
-        console.log(otziv__cards[0].children[1].style.order);
-        console.log(otziv__cards[0].children[2].style.order);
-
         if (event.target.className == "otziv__arrowLeft") {
             otziv__cards[0].children[count0].style.order = 2;
             otziv__cards[0].children[count1].style.order = 0;
