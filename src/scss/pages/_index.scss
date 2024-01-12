@@ -846,9 +846,10 @@
         justify-content: space-between;
     }
 
-    &__item {
+    &__arrowLeft, &__arrowRight {
         width: 40px;
         height: 40px;
+        cursor: pointer;
     }
 
     &__arrows {
@@ -968,6 +969,17 @@
         .otziv__cards__image {
             display: flex;
         }
+    }
+    #otziv1 {
+        order: 0;
+    }
+
+    #otziv2 {
+        order: 1;
+    }
+
+    #otziv3 {
+        order: 2;
     }
 
     &__card:nth-child(1) {
