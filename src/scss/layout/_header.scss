@@ -9,7 +9,7 @@
         font-size: 24px;
         cursor: pointer;
 
-        @media (max-width:768px) {
+        @media (max-width:1154px) {
             display: block;
             padding: 20px 0;
         }
@@ -69,7 +69,7 @@
         font-weight: 600;
         padding-right: 50px;
 
-        @media (max-width:768px) {
+        @media (max-width:1154px) {
             margin-left: 20px;
         }
 
@@ -103,7 +103,6 @@
         display: flex;
         align-items: center;
         gap: 20px;
-
     }
 
     @media (max-width:1154px) {
@@ -115,6 +114,7 @@
             left: 0;
             transform: translateY(-300px);
             transition: all .5s;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             z-index: 1001;
@@ -159,6 +159,7 @@
         opacity: 0;
         animation: appear 2s ease-in-out 1 forwards;
         animation-delay: 0.75s;
+
         @media (max-width:768px) {
             opacity: 1;
             animation: none;
@@ -169,6 +170,7 @@
         opacity: 0;
         animation: appear 2s ease-in-out 1 forwards;
         animation-delay: 1s;
+
         @media (max-width:768px) {
             opacity: 1;
             animation: none;

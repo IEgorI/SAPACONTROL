@@ -263,7 +263,6 @@
 
         @media (max-width:768px) {
             width: 354px;
-
         }
 
         @media (max-width:375px) {
@@ -898,13 +897,6 @@
         position: relative;
     }
 
-    &__group:hover {
-
-        &__rectangle {
-            background: rgba(241, 109, 34, 0.33);
-        }
-    }
-
     &__btn {
         display: flex;
         padding: 15px 20px;
@@ -990,7 +982,7 @@
     &__card:nth-child(1):hover {
         background-image: url("../assets/images/AlActive.png");
         background-repeat: no-repeat;
-        transition: all 5 ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     &__card:nth-child(2) {
@@ -1001,7 +993,7 @@
     &__card:nth-child(2):hover {
         background-image: url("../assets/images/VlActive.png");
         background-repeat: no-repeat;
-        transition: all 0.5 ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     &__card:nth-child(3) {
@@ -1012,7 +1004,7 @@
     &__card:nth-child(3):hover {
         background-image: url("../assets/images/AnActive.png");
         background-repeat: no-repeat;
-        transition: all 0.5 ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     &__info {
@@ -1219,10 +1211,9 @@
     }
 
     &__cost {
-        width: 286px;
+        width: 288px;
         display: flex;
         justify-content: center;
-        text-wrap: nowrap;
         height: 83px;
         border-radius: 40px;
         padding: 15px 20px 20px 20px;
